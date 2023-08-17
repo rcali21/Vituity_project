@@ -19,7 +19,7 @@ You should now see the following directory structure within your directory:
 - 📄 Vituity RCM EDI Coding Assessment.pdf
   - 📂 **scripts**
     - 🐍 Utils.py
-    - 🐍 make_sqllitedb.py
+    - 🐍 make_sqlitedb.py
     - 🐍 process_data.py
   - 📂 **notebook**
     - 📓 main_walkthrough.ipynb
@@ -63,7 +63,7 @@ The directory structure should now look like so:
 - 📄 Vituity RCM EDI Coding Assessment.pdf
   - 📂 **scripts**
     - 🐍 Utils.py <<<---- Functions used by the main script.
-    - 🐍 make_sqllitedb.py <<<---- Bonus challenge script.
+    - 🐍 make_sqlitedb.py <<<---- Bonus challenge script.
     - 🐍 process_data.py <<<---- Main script for running the pipeline.
   - 📂 **notebook**
     - 📓 main_walkthrough.ipynb
@@ -100,5 +100,5 @@ After the script has finished running you will now see the following subfolder a
       - 📊 ADT_(TodaysDate)_Modified_file.csv
       - 📊 ORU_(TodaysDate)_Modified_file.csv
     - 📂 **Bonus**
-      - 💾 ADT_mod.db
+      - 💾 ADT.db
 

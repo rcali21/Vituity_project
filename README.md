@@ -18,12 +18,12 @@ You should now see the following directory structure within your directory:
 - 📊 sampledata.csv
 - 📄 Vituity RCM EDI Coding Assessment.pdf
   - 📂 **scripts**
-    - 🐍 Utils.py
-    - 🐍 make_sqlitedb.py
-    - 🐍 process_data.py
+    - 🐍 Utils.py <<<---- Functions used by the main script.
+    - 🐍 make_sqlitedb.py <<<---- Bonus challenge script.
+    - 🐍 process_data.py <<<---- Main script for running the pipeline.
   - 📂 **notebook**
-    - 📓 main_walkthrough.ipynb
-    - 📓 db_walkthrough.txt
+    - 📓 main_walkthrough.ipynb <<<---- Main challenge notebook with markdown annotations for each step.
+    - 📓 db_walkthrough.txt <<<---- Bonus challenge notebook with markdown annotations for each step.
 
 
 Next, let's ensure we have the appropriate libraries installed to run the program (I assume you either A) have a conda environment already setup or B) are running this natively without one but at least have pip available on your system, as setting up environments would be beyond the scope of this challenge)
@@ -62,9 +62,9 @@ The directory structure should now look like so:
 - 📊 sampledata.csv
 - 📄 Vituity RCM EDI Coding Assessment.pdf
   - 📂 **scripts**
-    - 🐍 Utils.py <<<---- Functions used by the main script.
-    - 🐍 make_sqlitedb.py <<<---- Bonus challenge script.
-    - 🐍 process_data.py <<<---- Main script for running the pipeline.
+    - 🐍 Utils.py 
+    - 🐍 make_sqlitedb.py 
+    - 🐍 process_data.py 
   - 📂 **notebook**
     - 📓 main_walkthrough.ipynb
     - 📓 db_walkthrough.txt

@@ -21,7 +21,7 @@ def main():
         os.mkdir(bonus_dir)
 
         # Connect to the SQLite database (this will create a new database if it doesn't exist)
-        conn = sqlite3.connect(os.path.join(bonus_dir, 'ADT_mod.db'))
+        conn = sqlite3.connect(os.path.join(bonus_dir, 'ADT.db'))
 
         # Write the DataFrame to the SQLite database
         df.to_sql('table_name', conn, if_exists='replace', index=False)

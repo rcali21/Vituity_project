@@ -25,7 +25,7 @@ def main():
             break
         else:
             print(f'File {file} exists. Copying file to Archive/Original/ folder...')
-            shutil.copy(file, 'Archive/Original/')
+            shutil.copy(file, '../Archive/Original/')
 
     create_csv('ADT',modified_path)
     create_csv('ORU',modified_path)
@@ -36,10 +36,10 @@ def main():
     df_adt = pd.read_csv(ADT_csv)
     df_oru = pd.read_csv(ORU_csv)
 
-    ORU_message = extract_msg_fields("./Archive/Original/Sample_ORU.txt")
+    ORU_message = extract_msg_fields("../Archive/Original/Sample_ORU.txt")
     df_oru = df_oru.append(ORU_message, ignore_index=True)
 
-    ADT_message = extract_msg_fields("./Archive/Original/ADT_sample.txt")
+    ADT_message = extract_msg_fields("../Archive/Original/ADT_sample.txt")
     df_adt = df_adt.append(ADT_message, ignore_index=True)
 
     name_concat(df_adt)

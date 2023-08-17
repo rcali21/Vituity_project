@@ -3,7 +3,8 @@ import pandas as pd
 import shutil
 import datetime as dt
 import csv
-
+import warnings
+warnings.filterwarnings('ignore', category=FutureWarning)
 
 today = dt.date.today().strftime("%d_%m_%Y")
 

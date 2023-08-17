@@ -45,8 +45,12 @@ def main():
 
     name_concat(df_adt)
     name_concat(df_oru)
+    df_adt.to_csv(ADT_csv, index=True)
+    df_oru.to_csv(ORU_csv, index=True)
 
     sum_bills(df)
+
+
 
 if __name__ == "__main__":
     main()

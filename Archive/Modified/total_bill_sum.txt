@@ -1,8 +1,0 @@
-patient_state	bill_amount
-CA	21115
-IN	64355
-MO	1597
-NY	5793
-TN	7097
-TX	9089
-Total	109046

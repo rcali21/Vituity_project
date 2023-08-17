@@ -101,4 +101,8 @@ After the script has finished running you will now see the following 'Bonus' sub
       - 📊 ORU_(TodaysDate)_Modified_file.csv
     - 📂 **Bonus**
       - 💾 ADT.db
+     
+
+### Running the notebooks:
+The notebooks can be run by installing Jupyter Notebooks or Jupyter Lab and the ipynb kernel on your system. For brevity, I will assume you know how to do this or I will walk through it with you myself.
 

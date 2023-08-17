@@ -114,5 +114,5 @@ To re-run the scripts, simply run the following from the top-level directory bef
 
 `rm -rf Archive/`
 
-Then you may start from the beginning.
+You may then start from the beginning.
 

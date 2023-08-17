@@ -1,8 +1,6 @@
 import os
 import pandas as pd
-import shutil
 import datetime as dt
-import csv
 import warnings
 warnings.filterwarnings('ignore', category=FutureWarning)
 
@@ -13,9 +11,6 @@ def create_csv(csv_name, destination):
         # Construct the filename
     csv_file_path = f'{csv_name}_{today}_Modified_file.csv'
     csv_full_path = os.path.join(destination, csv_file_path)
-    # Create the CSV file
-    with open(csv_full_path, mode='w', newline='') as file:
-        writer = csv.writer(file)
     return csv_full_path
 
 

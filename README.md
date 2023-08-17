@@ -44,7 +44,7 @@ To run the scripts as outlined in Option (1), simply navigate to the 'scripts' d
 (Assuming you are at the top level 'Vituity_project' directory)
 
 ````md
-cd scripts
+cd scripts/
 
 python3 process_data.py
 ````
@@ -84,7 +84,7 @@ The directory structure should now look like so:
 The bonus challenge involves creating a SQLite database using Python and the csv files that we generated in the previous step. To do so, simply navigate to the scripts directory once again and call the appropriate script like so:
 
 ````md
-cd scripts
+cd scripts/
 
 python3 make_sqllitedb.py
 ````
@@ -105,4 +105,12 @@ After the script has finished running you will now see the following 'Bonus' sub
 
 ### Running the notebooks:
 The notebooks can be run by installing Jupyter Notebooks or Jupyter Lab and the ipynb kernel on your system. For brevity, I will assume you know how to do this or I will walk through it with you myself.
+
+
+## Re-running the scripts:
+To re-run the scripts, simply run the following from the top-level directory before you begin a subsequent run:
+
+`rm -rf Archive/`
+
+Then you may start from the beginning.
 

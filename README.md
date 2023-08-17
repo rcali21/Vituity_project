@@ -22,7 +22,7 @@ You should now see the following directory structure within your directory:
     - 🐍 make_sqlitedb.py <<<---- Bonus challenge script.
     - 🐍 process_data.py <<<---- Main script for running the pipeline.
   - 📂 **notebook**
-    - 📓 main_walkthrough.ipynb <<<---- Main challenge notebook with markdown annotations for each step.
+    - 📓 walkthrough_nb.ipynb <<<---- Main challenge notebook with markdown annotations for each step.
     - 📓 db_walkthrough.txt <<<---- Bonus challenge notebook with markdown annotations for each step.
 
 
@@ -66,7 +66,7 @@ The directory structure should now look like so:
     - 🐍 make_sqlitedb.py 
     - 🐍 process_data.py 
   - 📂 **notebook**
-    - 📓 main_walkthrough.ipynb
+    - 📓 walkthrough_nb.ipynb
     - 📓 db_walkthrough.txt
   - 📂 **Archive**
     - 📂 **Original**

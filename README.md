@@ -89,7 +89,7 @@ cd scripts
 python3 make_sqllitedb.py
 ````
 
-After the script has finished running you will now see the following subfolder and file within the Archive folder that we previously created.
+After the script has finished running you will now see the following 'Bonus' subfolder and SQL database file within the 'Archive' folder that we previously created.
 
   - 📂 **Archive**
     - 📂 **Original**

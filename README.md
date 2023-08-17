@@ -76,6 +76,7 @@ The directory structure should now look like so:
     - 📂 **Modified**
       - 📊 ADT_(TodaysDate)_Modified_file.csv
       - 📊 ORU_(TodaysDate)_Modified_file.csv
+      - 📄 total_bill_sum.txt
      
 
 
@@ -99,6 +100,7 @@ After the script has finished running you will now see the following 'Bonus' sub
     - 📂 **Modified**
       - 📊 ADT_(TodaysDate)_Modified_file.csv
       - 📊 ORU_(TodaysDate)_Modified_file.csv
+      - 📄 total_bill_sum.txt
     - 📂 **Bonus**
       - 💾 ADT.db
      

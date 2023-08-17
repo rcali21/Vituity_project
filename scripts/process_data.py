@@ -7,7 +7,7 @@ from Utils import create_csv, csv_parser, extract_msg_fields, name_concat, sum_b
 def main():
     os.chdir('../')
     today = dt.date.today().strftime("%d_%m_%Y")
-    df = pd.read_csv('../sampledata.csv')
+    df = pd.read_csv('./sampledata.csv')
     ADT_csv = f'./Archive/Modified/ADT_{today}_Modified_file.csv'
     ORU_csv = f'./Archive/Modified/ORU_{today}_Modified_file.csv'
 

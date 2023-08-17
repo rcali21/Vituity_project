@@ -1,4 +1,5 @@
-# Vituity_project
+![image](https://github.com/rcali21/Vituity_project/assets/71532882/d0308d31-3eea-4049-b257-6c3a7ed5df58)
+# Vituity_project 
 
 This project was developed to address a technical project administered by Vituity.
 

@@ -7,7 +7,9 @@ This project was developed to address a technical project administered by Vituit
 
 To begin, navigate to an empty directory on your system and run the following:
 
-`git clone https://github.com/rcali21/Vituity_project.git`
+````
+git clone https://github.com/rcali21/Vituity_project.git
+````
 
 You should now see the following directory structure within your directory:
 
@@ -31,7 +33,9 @@ Next, let's ensure we have the appropriate libraries installed to run the progra
 
 To download the script dependencies, simply run the following command from the top-level of this directory:
 
-`pip install -r requirements.txt`
+````
+pip install -r requirements.txt
+````
 
 
 ### Note: 

@@ -1,7 +1,6 @@
-import os
-import pandas as pd
 import datetime as dt
 import warnings
+import re
 
 # pandas was complaining about append vs concat and I preferred append so ignoring the deprecation warning for now
 warnings.filterwarnings("ignore", category=FutureWarning)

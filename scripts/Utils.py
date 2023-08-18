@@ -68,6 +68,8 @@ def extract_msg_fields(message):
             extracted_data["bill_amount"] = 1234
             ### C. ADD DATE OF SERVICE
             extracted_data["date_of_service"] = today
+             # Extract email using regular expression. This will look for uppercase and lowercase and other characters directly 
+            # before an @ and directly after but it isn't perfect and will likely fail if an @ appears in a message elsewhere in PID seg
             email = re.search(r'[\w.-]+@[\w.-]+', pid_fields[13])
             # insert email by grouping the entire match if the re works properly
             extracted_data['patient_email_address'] = email.group(0) if email else None

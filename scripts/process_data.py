@@ -11,7 +11,7 @@ def main():
     target_files = ['ADT_sample.txt', 'Sample_ORU.txt', 'sampledata.csv']
     dirs_to_make = ['Archive', 'Archive/Original', 'Archive/Modified']
 
-
+    # basic checks for dirs and files
     for dir in dirs_to_make:
         if not os.path.exists(dir):
             os.mkdir(dir)
@@ -24,6 +24,8 @@ def main():
             shutil.copy(file, './Archive/Original/')
 
     
+
+    # Call all of our functions from utils
     
     adt_df = parse_and_save_csv(df, 'ADT')
     oru_df = parse_and_save_csv(df, 'ORU')

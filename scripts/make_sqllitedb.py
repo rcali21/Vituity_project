@@ -5,9 +5,9 @@ import datetime as dt
 today = dt.date.today().strftime("%d_%m_%Y")
 
 def main():
-    # Set the base directory
+    
     base_dir = '../Archive/Modified/'
-    # List all files in the base directory
+
     file_dir = os.listdir(base_dir)
     
     # Filter for ADT CSV files
@@ -20,13 +20,13 @@ def main():
         bonus_dir = '../Archive/Bonus/'
         os.mkdir(bonus_dir)
 
-        # Connect to the SQLite database (this will create a new database if it doesn't exist)
+        # Create db
         conn = sqlite3.connect(os.path.join(bonus_dir, 'ADT.db'))
 
-        # Write the DataFrame to the SQLite database
+        # write existing adt_df to sqlite db
         df.to_sql('table_name', conn, if_exists='replace', index=False)
 
-        # Close the connection
+        # Close
         conn.close()
 
 if __name__ == "__main__":

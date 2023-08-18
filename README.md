@@ -13,20 +13,20 @@ git clone https://github.com/rcali21/Vituity_project.git
 
 You should now see the following directory structure within your directory:
 
-- 📂 **Vituity_project**
-  - 📄 README.md
-  - 📄 ADT_sample.txt
-  - 📄 Sample_ORU.txt
-  - 📄 requirements.txt
-  - 📊 sampledata.csv
-  - 📄 Vituity RCM EDI Coding Assessment.pdf
-    - 📂 **scripts**
-      - 🐍 Utils.py <<<---- Functions used by the main script.
-      - 🐍 make_sqlitedb.py <<<---- Bonus challenge script.
-      - 🐍 process_data.py <<<---- Main script for running the pipeline.
-    - 📂 **notebook**
-      - 📓 walkthrough_nb.ipynb <<<---- Main challenge notebook.
-      - 📓 db_walkthrough.ipynb <<<---- Bonus challenge notebook.
+- 📂 [**Vituity_project**](https://github.com/rcali21/Vituity_project/tree/main)
+  - 📄 [README.md](https://github.com/rcali21/Vituity_project/blob/main/README.md)
+  - 📄 [ADT_sample.txt](https://github.com/rcali21/Vituity_project/blob/main/ADT_sample.txt)
+  - 📄 [Sample_ORU.txt](https://github.com/rcali21/Vituity_project/blob/main/Sample_ORU.txt)
+  - 📄 [requirements.txt](https://github.com/rcali21/Vituity_project/blob/main/requirements.txt)
+  - 📊 [sampledata.csv](https://github.com/rcali21/Vituity_project/blob/main/sampledata.csv)
+  - 📄 [Vituity RCM EDI Coding Assessment.pdf](https://github.com/rcali21/Vituity_project/blob/main/Vituity%20RCM%20EDI%20Coding%20Assessment.pdf)
+    - 📂 [**scripts**](https://github.com/rcali21/Vituity_project/tree/main/scripts)
+      - 🐍 [Utils.py](https://github.com/rcali21/Vituity_project/blob/main/scripts/Utils.py) <<<---- Functions used by the main script.
+      - 🐍 [make_sqlitedb.py](https://github.com/rcali21/Vituity_project/blob/main/scripts/make_sqlitedb.py) <<<---- Bonus challenge script.
+      - 🐍 [process_data.py](https://github.com/rcali21/Vituity_project/blob/main/scripts/process_data.py) <<<---- Main script for running the pipeline.
+    - 📂 [**notebook**](https://github.com/rcali21/Vituity_project/tree/main/notebook)
+      - 📓 [walkthrough_nb.ipynb](https://github.com/rcali21/Vituity_project/blob/main/notebook/walkthrough_nb.ipynb) <<<---- Main challenge notebook.
+      - 📓 [db_walkthrough.ipynb](https://github.com/rcali21/Vituity_project/blob/main/notebook/db_walkthrough.ipynb) <<<---- Bonus challenge notebook.
 
 
 Next, let's ensure we have the appropriate libraries installed to run the program (I assume you either A) have a conda environment already setup or B) are running this natively without one but at least have pip available on your system, as setting up environments would be beyond the scope of this challenge)

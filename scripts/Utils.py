@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import datetime as dt
 import warnings
+
 # pandas was complaining about append vs concat and I preferred append so ignoring the deprecation warning for now
 warnings.filterwarnings("ignore", category=FutureWarning)
 
@@ -68,21 +69,18 @@ def extract_msg_fields(message):
             extracted_data["bill_amount"] = 1234
             ### C. ADD DATE OF SERVICE
             extracted_data["date_of_service"] = today
-             # Extract email using regular expression. This will look for uppercase and lowercase and other characters directly 
+            # Extract email using regular expression. This will look for uppercase and lowercase and other characters directly
             # before an @ and directly after but it isn't perfect and will likely fail if an @ appears in a message elsewhere in PID seg
-            email = re.search(r'[\w.-]+@[\w.-]+', pid_fields[13])
+            email = re.search(r"[\w.-]+@[\w.-]+", pid_fields[13])
             # insert email by grouping the entire match if the re works properly
-            extracted_data['patient_email_address'] = email.group(0) if email else None
-            
+            extracted_data["patient_email_address"] = email.group(0) if email else None
 
         # Extract data from MSH section
         msh_segment = [line for line in lines if line.startswith("MSH")]
         if msh_segment:
             msh_fields = msh_segment[0].split("|")
             # Extract the desired values (9th field is message type & trigger event in MSH segment)
-            message_type = msh_fields[8].split(
-                "^"
-            )  # Further split this field using ^
+            message_type = msh_fields[8].split("^")  # Further split this field using ^
             formatted_message = "-".join(
                 message_type
             )  # Join the extracted values with '-'

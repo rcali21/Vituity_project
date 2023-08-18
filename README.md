@@ -12,19 +12,19 @@ To begin, navigate to an empty directory on your system and run the following:
 You should now see the following directory structure within your directory:
 
 - 📂 **Vituity_project**
-- 📄 README.md
-- 📄 ADT_sample.txt
-- 📄 Sample_ORU.txt
-- 📄 requirements.txt
-- 📊 sampledata.csv
-- 📄 Vituity RCM EDI Coding Assessment.pdf
-  - 📂 **scripts**
-    - 🐍 Utils.py <<<---- Functions used by the main script.
-    - 🐍 make_sqlitedb.py <<<---- Bonus challenge script.
-    - 🐍 process_data.py <<<---- Main script for running the pipeline.
-  - 📂 **notebook**
-    - 📓 walkthrough_nb.ipynb <<<---- Main challenge notebook with markdown annotations for each step.
-    - 📓 db_walkthrough.txt <<<---- Bonus challenge notebook with markdown annotations for each step.
+  - 📄 README.md
+  - 📄 ADT_sample.txt
+  - 📄 Sample_ORU.txt
+  - 📄 requirements.txt
+  - 📊 sampledata.csv
+  - 📄 Vituity RCM EDI Coding Assessment.pdf
+    - 📂 **scripts**
+      - 🐍 Utils.py <<<---- Functions used by the main script.
+      - 🐍 make_sqlitedb.py <<<---- Bonus challenge script.
+      - 🐍 process_data.py <<<---- Main script for running the pipeline.
+    - 📂 **notebook**
+      - 📓 walkthrough_nb.ipynb <<<---- Main challenge notebook with markdown annotations for each step.
+      - 📓 db_walkthrough.txt <<<---- Bonus challenge notebook with markdown annotations for each step.
 
 
 Next, let's ensure we have the appropriate libraries installed to run the program (I assume you either A) have a conda environment already setup or B) are running this natively without one but at least have pip available on your system, as setting up environments would be beyond the scope of this challenge)
@@ -56,28 +56,28 @@ Upon running the scripts, you should now see an 'Archive' folder within the top-
 The directory structure should now look like so:
 
 - 📂 **Vituity_project**
-- 📄 README.md
-- 📄 ADT_sample.txt
-- 📄 Sample_ORU.txt
-- 📄 requirements.txt
-- 📊 sampledata.csv
-- 📄 Vituity RCM EDI Coding Assessment.pdf
-  - 📂 **scripts**
-    - 🐍 Utils.py 
-    - 🐍 make_sqlitedb.py 
-    - 🐍 process_data.py 
-  - 📂 **notebook**
-    - 📓 walkthrough_nb.ipynb
-    - 📓 db_walkthrough.txt
-  - 📂 **Archive**
-    - 📂 **Original**
-      - 📄 ADT_sample.txt
-      - 📄 Sample_ORU.txt
-      - 📊 sampledata.csv
-    - 📂 **Modified**
-      - 📊 ADT_(TodaysDate)_Modified_file.csv
-      - 📊 ORU_(TodaysDate)_Modified_file.csv
-      - 📄 total_bill_sum.txt
+  - 📄 README.md
+  - 📄 ADT_sample.txt
+  - 📄 Sample_ORU.txt
+  - 📄 requirements.txt
+  - 📊 sampledata.csv
+  - 📄 Vituity RCM EDI Coding Assessment.pdf
+    - 📂 **scripts**
+      - 🐍 Utils.py 
+      - 🐍 make_sqlitedb.py 
+      - 🐍 process_data.py 
+    - 📂 **notebook**
+      - 📓 walkthrough_nb.ipynb
+      - 📓 db_walkthrough.txt
+    - 📂 **Archive**
+      - 📂 **Original**
+        - 📄 ADT_sample.txt
+        - 📄 Sample_ORU.txt
+        - 📊 sampledata.csv
+      - 📂 **Modified**
+        - 📊 ADT_(TodaysDate)_Modified_file.csv
+        - 📊 ORU_(TodaysDate)_Modified_file.csv
+        - 📄 total_bill_sum.txt
      
 
 

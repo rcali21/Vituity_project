@@ -7,6 +7,7 @@ warnings.filterwarnings("ignore", category=FutureWarning)
 
 today = dt.date.today().strftime("%d_%m_%Y")
 
+
 # function that takes in original df and message type 'ADT' or 'ORU' in our case and cross references the column in orig df
 def parse_and_save_csv(df, message_type):
     parsed_df = df[df["message_type"].str.contains(message_type, na=False)]

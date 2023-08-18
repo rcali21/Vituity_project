@@ -29,7 +29,7 @@ You should now see the following directory structure within your directory:
       - 📓 [db_walkthrough.ipynb](https://github.com/rcali21/Vituity_project/blob/main/notebook/db_walkthrough.ipynb) <<<---- Bonus challenge notebook.
 
 
-Next, let's ensure we have the appropriate libraries installed to run the program (I assume you either A) have a conda environment already setup or B) are running this natively without one but at least have pip available on your system, as setting up environments would be beyond the scope of this challenge)
+Next, let's ensure we have the appropriate libraries installed to run the program (I assume you either A) have a conda environment already setup or B) are running this natively without one but at least have pip available on your system, as setting up environments would be beyond the scope of this tutorial).
 
 To download the script dependencies, simply run the following command from the top-level of this directory:
 

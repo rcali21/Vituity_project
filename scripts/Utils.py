@@ -79,14 +79,14 @@ def extract_msg_fields(message):
         msh_segment = [line for line in lines if line.startswith("MSH")]
         if msh_segment:
             msh_fields = msh_segment[0].split("|")
-            # Extract the desired values (9th field is message type & trigger event in MSH segment)
-            message_type = msh_fields[8].split("^")  # Further split this field using ^
+            # Extract the values from 9th field which is where they appear in txt file
+            message_type = msh_fields[8].split("^")  # Then we split on ^
             formatted_message = "-".join(
                 message_type
-            )  # Join the extracted values with '-'
+            )  # Join the extracted values with - to match how they are in original csv 
             extracted_data["message_type"] = formatted_message
 
-        # Extract data from GT1 line (this is bonus info)
+        # Extract data from GT1 line
         gt1_segment = [line for line in lines if line.startswith("GT1")]
         if gt1_segment:
             gt1_fields = gt1_segment[0].split("|")

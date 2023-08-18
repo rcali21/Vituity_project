@@ -36,7 +36,7 @@ def extract_msg_fields(message):
             extracted_data["patient_last_name"] = (
                 pid_fields[5].split("^")[0] if len(pid_fields) > 5 else None
             )
-            ### ADD FIRST NAME --- see if there are more than 5 items in pid_fields and if so, split the sixth item by '^'
+            ### ADD FIRST NAME --- see if there are more than 5 items in pid_fields and if so, split the sixth item by ^
             # and take the second part as the patient's first name, else none
             extracted_data["patient_first_name"] = (
                 pid_fields[5].split("^")[1] if len(pid_fields) > 5 else None
@@ -76,7 +76,7 @@ def extract_msg_fields(message):
             # Extract the desired values (9th field is message type & trigger event in MSH segment)
             message_type = msh_fields[8].split(
                 "^"
-            )  # Further split this field using '^'
+            )  # Further split this field using ^
             formatted_message = "-".join(
                 message_type
             )  # Join the extracted values with '-'
@@ -86,11 +86,11 @@ def extract_msg_fields(message):
         gt1_segment = [line for line in lines if line.startswith("GT1")]
         if gt1_segment:
             gt1_fields = gt1_segment[0].split("|")
-            # If the  list has more than 3 items, split the fourth item which is index 3 by '^' take the first part otherwise set it to None
+            # If the  list has more than 3 items, split the fourth item which is index 3 by ^ take the first part otherwise set it to None
             extracted_data["guarantor_first_name"] = (
                 gt1_fields[3].split("^")[0] if len(gt1_fields) > 3 else None
             )
-            # If more than 3 items and the fourth item when split by '^' has more than 1 part, take the second part otherwise set it to None
+            # If more than 3 items and the fourth item when split by ^ has more than 1 part, take the second part otherwise set it to None
             extracted_data["guarantor_last_name"] = (
                 gt1_fields[3].split("^")[1]
                 if len(gt1_fields) > 3 and len(gt1_fields[3].split("^")) > 1
@@ -102,7 +102,7 @@ def extract_msg_fields(message):
                 if len(gt1_fields) > 3 and len(gt1_fields[3].split("^")) > 2
                 else None
             )
-            # If more than 5 items, split the sixth item by '^' take the first part
+            # If more than 5 items, split the sixth item by ^ take the first part
             extracted_data["guarantor_address_1"] = (
                 gt1_fields[5].split("^")[0] if len(gt1_fields) > 5 else None
             )

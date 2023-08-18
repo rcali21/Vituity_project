@@ -117,7 +117,9 @@ The notebooks can be run by installing Jupyter Notebooks or Jupyter Lab and the 
 ## Re-running the scripts:
 To re-run the scripts, simply run the following from the top-level directory before you begin a subsequent run:
 
-`rm -rf Archive/`
+````
+rm -rf Archive/
+````
 
 You may then start from the beginning.
 

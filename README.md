@@ -23,8 +23,8 @@ You should now see the following directory structure within your directory:
       - 🐍 make_sqlitedb.py <<<---- Bonus challenge script.
       - 🐍 process_data.py <<<---- Main script for running the pipeline.
     - 📂 **notebook**
-      - 📓 walkthrough_nb.ipynb <<<---- Main challenge notebook with markdown annotations for each step.
-      - 📓 db_walkthrough.txt <<<---- Bonus challenge notebook with markdown annotations for each step.
+      - 📓 walkthrough_nb.ipynb <<<---- Main challenge notebook.
+      - 📓 db_walkthrough.ipynb <<<---- Bonus challenge notebook.
 
 
 Next, let's ensure we have the appropriate libraries installed to run the program (I assume you either A) have a conda environment already setup or B) are running this natively without one but at least have pip available on your system, as setting up environments would be beyond the scope of this challenge)
@@ -68,7 +68,7 @@ The directory structure should now look like so:
       - 🐍 process_data.py 
     - 📂 **notebook**
       - 📓 walkthrough_nb.ipynb
-      - 📓 db_walkthrough.txt
+      - 📓 db_walkthrough.ipynb
     - 📂 **Archive**
       - 📂 **Original**
         - 📄 ADT_sample.txt
